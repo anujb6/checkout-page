@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c64fa9aba.js" crossorigin="anonymous"></script>
+    <title>checkout page</title>
+</head>
+<body>
+    <div class="grid">
+        
+        <div class="left">
+            <h1>Checkout</h1>
+           <form action="">
+            <span>
+                <h3>Contact information</h3>
+                <h6>Email</h6>
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="" id="email" placeholder="Enter Your Email...">
+
+                <h6>phone</h6>
+                <i class="fas fa-phone-alt"></i>
+                <input type="number" name="" id="phone" placeholder="Your Phone..">
+            </span>
+            <span>
+                <h3>Shipping address</h3>
+                <h6>Full name</h6>
+                <i class="fas fa-user-astronaut"></i>
+                <input type="text" placeholder="Your Name...">
+
+                <h6>Address</h6>
+                <i class="fas fa-igloo"></i>
+                <input type="text" placeholder="Your Address...">
+
+                <h6>City</h6>
+                <i class="fas fa-city"></i>
+                <input type="text" placeholder="Your City...">
+
+                <h6>Country</h6>
+                <label for="country"></label><span style="color: red !important; display: inline; float: none;"></span>      
+        
+           
+            <select id="country" name="country">
+                <option value="" disabled selected>Your Country..</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Germany">American Samoa</option>
+                <option value="Canada">Andorra</option>
+                <option value="United states">Angola</option>
+                <option value="Africa">Anguilla</option>
+                <option value="Argentin">Antarctica</option>
+                <option value="Portugal">Antigua and Barbuda</option>
+                <option value="China">Argentina</option>
+                <option value="Pakistan">Armenia</option>
+                <option value="India">Aruba</option>
+                <option value="Australia">Australia</option>
+                </select>
+            </label>
+                <h6>Postal code</h6>
+                <i class="fas fa-mail-bulk"></i>
+                <input type="text" name="" id="postal-code" placeholder="postal code..."><br>
+            </span>
+
+             
+                <input type="checkbox">   Save this information for next time
+             
+           <br>
+            <button type="submit">Continue</button>
+
+           </form>
+        </div>
+        <div class="right">
+
+               <div class="right-box">
+                <span class="bag">
+                    <img src="photo1.png" alt="">
+                    <h2>Vintage Backpack</h2>
+                    <h3>$54.99  <strike>$94.99</strike></h3>
+                    <div class="qty mt-5">
+                        <p class="minus bg-dark">-</p>
+                        <input type="number" class="count" name="qty" value="1">
+                        <p class="plus bg-dark">+</p>
+                    </div>
+                   </span>
+    
+                   <span class="Shoes">
+                    <img src="photo2.png" alt="">
+                    <h2>Levi Shoes</h2>
+                    <h3>$74.99 <strike>$124.99</strike></h3>
+                    <div class="qty mt-5">
+                        <p class="minus bg-dark">-</p>
+                        <input type="number" class="count" name="qty" value="1">
+                        <p class="plus bg-dark">+</p>
+                    </div>
+                   </span>
+                
+                   <hr>
+                   <p class="pricing">Shipping $93</p>
+                   <hr>
+                   <p class="pricing">Total $148.98</p>
+               </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
